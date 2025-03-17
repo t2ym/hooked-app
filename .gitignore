@@ -1,0 +1,16 @@
+node_modules
+bower_components
+/test/log/
+/backend/integrity-service-helpers/build/
+/backend/validation-console/dist/
+/backend/blacklist.json
+/backend/whitelist.json
+/root/
+/frontend/
+/keys/
+/compat-lib/build/
+/compat-lib/*.tgz
+/nginx.conf
+/nginx.pid
+/.nyc_output/
+/backend-in-progress/

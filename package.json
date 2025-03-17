@@ -1,0 +1,34 @@
+{
+  "name": "hooked-app",
+  "version": "0.0.0",
+  "description": "thin-hook app template",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "cd compat-lib && npm pack thin-hook@0.4.0-alpha.61",
+    "build": "gulp",
+    "build:monitor": "ENABLE_MONITORING=1 gulp",
+    "start": "gulp https # npm run build must have been done with enableMonitoring as false",
+    "monitor": "gulp monitor # npm run build must have been done with enableMonitoring as true",
+    "test": "gulp reportage-run # npm run build must have been done and npm run monitor must be running in another terminal",
+    "browser": "gulp reportage-browser # npm run build must have been done and npm run monitor must be running in another terminal"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "argparse": "^1.0.10",
+    "concurrently": "^5.3.0",
+    "del": "^6.1.1",
+    "express": "^4.18.2",
+    "express-static-gzip": "^1.1.3",
+    "gulp": "^4.0.2",
+    "gulp-shell": "^0.8.0",
+    "http-proxy-middleware": "^0.19.0",
+    "json-stringify-safe": "^5.0.1",
+    "sass": "^1.64.0",
+    "target-configurator": "^0.1.10",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "thin-hook": "file:compat-lib/thin-hook-0.4.0-alpha.61.tgz"
+  }
+}
