@@ -30,6 +30,7 @@ Application Template for [Thin Hook Preprocessor](https://github.com/t2ym/thin-h
 
 - Linux OS (Ubuntu recommended)
 - Node.js
+- GCC compiler (g++)
 - Google Chrome for Linux
 - openssl
 - nginx (for test)
