@@ -13,6 +13,7 @@ bower_components
 /raw-react/package-lock.json
 /raw-lig/package-lock.json
 /raw/package-lock.json
+/backend/validation-console/package-lock.json
 /package-lock.json
 /nginx.conf
 /nginx.pid
