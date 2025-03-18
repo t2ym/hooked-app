@@ -10,6 +10,10 @@ bower_components
 /keys/
 /compat-lib/build/
 /compat-lib/*.tgz
+/raw-react/package-lock.json
+/raw-lig/package-lock.json
+/raw/package-lock.json
+/package-lock.json
 /nginx.conf
 /nginx.pid
 /.nyc_output/

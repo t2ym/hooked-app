@@ -33,7 +33,7 @@ if [ "$BUILT" = "1" ]; then
   mkdir -p react-convert
   pushd react-convert
   npm init -y
-  npm install rollup @rollup/plugin-node-resolve @rollup/plugin-commonjs @rollup/plugin-replace glob
+  npm install rollup@3.26.3 @rollup/plugin-node-resolve@15.1.0 @rollup/plugin-commonjs@25.0.3 @rollup/plugin-replace@5.0.2 glob@10.3.3
   cp -v ../../react-rollup.config.mjs .
   #cp -v ../../react.patch .
   mkdir -p original-packages
