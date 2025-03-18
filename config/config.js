@@ -34,7 +34,7 @@ class TargetConfig extends Injectable(Traceable(Configurable(GulpDefaultRegistry
       [TargetConfig.needResolution]: true,
       scheme: () => this.mode.enableMonitoring
         ? 'version.ISOString'
-        : 'version.ISOString',
+        : 'version',
       generators: {
         'version': () => this['hook-min-js'].searchParams.version,
         'version.ISOString': () => `${this['hook-min-js'].searchParams.version}.${new Date().toISOString()}`,
@@ -337,7 +337,7 @@ class TargetConfig extends Injectable(Traceable(Configurable(GulpDefaultRegistry
         },
       },
       searchParams: {
-        'version': 9,
+        'version': 1,
         'no-hook-authorization': (plugin, targetType, targetConfig) => {
           // plugin === null : returns the list of dependent plugins for targetType
           // plugin !== null : returns the parameter value for targetType
