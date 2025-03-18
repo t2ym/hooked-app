@@ -10,7 +10,7 @@
     "start": "gulp https # npm run build must have been done with enableMonitoring as false",
     "start:monitor": "gulp monitor # npm run build must have been done with enableMonitoring as true",
     "test": "gulp reportage-run # npm run build must have been done and npm run monitor must be running in another terminal",
-    "browser": "gulp reportage-browser # npm run build must have been done and npm run monitor must be running in another terminal"
+    "test:browser": "gulp reportage-browser # npm run build must have been done and npm run monitor must be running in another terminal"
   },
   "author": "",
   "license": "BSD-2-Clause",
