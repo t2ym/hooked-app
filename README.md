@@ -103,7 +103,7 @@ npm run build
 npm run start
 ```
 
-8. Open the Site
+8. Open the App
 
 ```sh
 google-chrome https://localhost:8080/ &
