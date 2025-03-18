@@ -56,7 +56,7 @@ Optionally, you can copy trusted certificates for an existing thin-hook project 
 
 ```sh
 npm run build:monitor # build the monitor mode server
-# Input an empty passphrase for the generated client certificate
+# Input an empty password for the generated client certificate
 
 google-chrome &
 # Navigate to chrome://settings/certificates
