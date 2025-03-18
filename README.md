@@ -29,7 +29,7 @@ Application Template for [Thin Hook Preprocessor](https://github.com/t2ym/thin-h
 1. Prerequisites
 
 - Linux OS (Ubuntu recommended)
-- Node.js
+- Node.js (>=18 LTS)
 - GCC compiler (g++)
 - Google Chrome for Linux
 - openssl
@@ -123,7 +123,8 @@ google-chrome https://localhost:8082/ &
 - Change the value of `this.path.raw` as `raw-lit` by setting the array index from `1` to `0`
 
 ### Change the app hostname
-- Set the environment variable `SERVER_HOST` as the server hostname
+- Set the environment variable `SERVER_HOST` as the server hostname in FQDN
+  - If the variable is not defined, the default hostname is `localhost`
 
 ### Change the app version
 - Update the value of `this["generate-version"].version`, or
