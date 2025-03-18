@@ -1,6 +1,7 @@
 node_modules
 bower_components
 /test/log/
+/test/reportage.config.js
 /backend/integrity-service-helpers/build/
 /backend/validation-console/dist/
 /backend/blacklist.json
