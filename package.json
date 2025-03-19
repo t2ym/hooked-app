@@ -4,13 +4,13 @@
   "description": "thin-hook app template",
   "main": "index.js",
   "scripts": {
-    "pack": "cd compat-lib && npm pack thin-hook@0.4.0-alpha.61 && npm pack reportage@0.0.11 && npm pack scenarist@1.1.10 && npm pack target-configurator@0.1.10 && npm pack target-injector@0.1.1",
+    "pack": "cd compat-lib &&\\\nnpm pack thin-hook@0.4.0-alpha.61 &&\\\nnpm pack reportage@0.0.11 &&\\\nnpm pack scenarist@1.1.10 &&\\\nnpm pack target-configurator@0.1.10 &&\\\nnpm pack target-injector@0.1.1",
     "build": "gulp",
     "build:monitor": "ENABLE_MONITORING=1 gulp",
-    "start": "gulp https # npm run build must have been done with enableMonitoring as false",
-    "start:monitor": "gulp monitor # npm run build must have been done with enableMonitoring as true",
-    "test": "gulp reportage-run # npm run build must have been done and npm run monitor must be running in another terminal",
-    "test:browser": "gulp reportage-browser # npm run build must have been done and npm run monitor must be running in another terminal"
+    "start": "gulp https # npm run build must have been done",
+    "start:monitor": "gulp monitor # npm run build:monitor must have been done",
+    "test": "gulp reportage-run # npm run build:monitor must have been done and npm run start:monitor must be running in another terminal",
+    "test:browser": "gulp reportage-browser # npm run build:monitor must have been done and npm run start:monitor must be running in another terminal"
   },
   "author": "",
   "license": "BSD-2-Clause",
