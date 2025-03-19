@@ -12,7 +12,7 @@ bower_components
 /compat-lib/build/
 /compat-lib/*.tgz
 /raw-react/package-lock.json
-/raw-lig/package-lock.json
+/raw-lit/package-lock.json
 /raw/package-lock.json
 /backend/validation-console/package-lock.json
 /package-lock.json
