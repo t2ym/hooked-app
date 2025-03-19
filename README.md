@@ -128,7 +128,7 @@ google-chrome https://localhost:8082/ &
 
 ### Change the app version
 - Update the value of `this["generate-version"].version`, or
-- Select the version generation scheme at `this["generate-version"].schema`
+- Select the version generation scheme at `this["generate-version"].scheme`
 
 ## Notes
 - The example modular access policies at `config/policy/` are still experimental
