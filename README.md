@@ -46,7 +46,7 @@ git clone https://github.com/t2ym/hooked-app
 
 ```sh
 cd hooked-app
-npm run preinstall # download the thin-hook package via npm pack
+npm run pack # download packages via npm pack
 npm install 
 npm install # optional dependencies
 ```
@@ -101,7 +101,7 @@ npm run build
 7. Start the Server
 
 ```sh
-npm run start
+npm start
 ```
 
 8. Open the App

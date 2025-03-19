@@ -4,7 +4,7 @@
   "description": "thin-hook app template",
   "main": "index.js",
   "scripts": {
-    "preinstall": "cd compat-lib && npm pack thin-hook@0.4.0-alpha.61",
+    "pack": "cd compat-lib && npm pack thin-hook@0.4.0-alpha.61 && npm pack reportage@0.0.11 && npm pack scenarist@1.1.10 && npm pack target-configurator@0.1.10 && npm pack target-injector@0.1.1",
     "build": "gulp",
     "build:monitor": "ENABLE_MONITORING=1 gulp",
     "start": "gulp https # npm run build must have been done with enableMonitoring as false",
@@ -14,7 +14,7 @@
   },
   "author": "",
   "license": "BSD-2-Clause",
-  "devDependencies": {
+  "dependencies": {
     "argparse": "^1.0.10",
     "concurrently": "^5.3.0",
     "del": "^6.1.1",
@@ -24,11 +24,18 @@
     "gulp-shell": "^0.8.0",
     "http-proxy-middleware": "^0.19.0",
     "json-stringify-safe": "^5.0.1",
+    "reportage": "file:compat-lib/reportage-0.0.11.tgz",
     "sass": "^1.64.0",
-    "target-configurator": "^0.1.10",
-    "typescript": "^5.1.6"
+    "scenarist": "file:compat-lib/scenarist-1.1.10.tgz",
+    "target-configurator": "file:compat-lib/target-configurator-0.1.10.tgz",
+    "target-injector": "file:compat-lib/target-injector-0.1.1.tgz",
+    "thin-hook": "file:compat-lib/thin-hook-0.4.0-alpha.61.tgz",
+    "typescript": "^5.8.2"
   },
-  "dependencies": {
-    "thin-hook": "file:compat-lib/thin-hook-0.4.0-alpha.61.tgz"
+  "overrides": {
+    "reportage": "$reportage",
+    "scenarist": "$scenarist",
+    "target-configurator": "$target-configurator",
+    "target-injector": "$target-injector"
   }
 }
