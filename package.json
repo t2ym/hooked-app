@@ -12,7 +12,7 @@
     "test": "gulp reportage-run # npm run build:monitor must have been done and npm run start:monitor must be running in another terminal",
     "test:browser": "gulp reportage-browser # npm run build:monitor must have been done and npm run start:monitor must be running in another terminal"
   },
-  "author": "",
+  "author": "Tetsuya Mori <t2y3141592@gmail.com>",
   "license": "BSD-2-Clause",
   "dependencies": {
     "argparse": "^1.0.10",
