@@ -1,0 +1,13 @@
+{
+  "name": "lit-js-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "dependencies": {
+    "@lit-labs/ssr-dom-shim": "1.1.1",
+    "@lit/reactive-element": "1.6.2",
+    "lit": "2.7.5",
+    "lit-element": "3.3.2",
+    "lit-html": "2.7.4"
+  }
+}

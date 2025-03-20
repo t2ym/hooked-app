@@ -17,7 +17,7 @@ class TargetConfig extends Injectable(Traceable(Configurable(GulpDefaultRegistry
   _configure() {
     super._configure();
     this.assign('path')({
-      raw: [ 'raw-lit', 'raw-react' ][1],
+      raw: [ 'raw-lit', 'raw-react', 'raw' ][2],
       root: 'root',
       transpileTarget: [ 'raw', 'root' ][1], // target of transpile phase tasks
       backend: 'backend',
@@ -1019,7 +1019,7 @@ class TargetConfig extends Injectable(Traceable(Configurable(GulpDefaultRegistry
       reporterOrigin: () => this.mode.enableMonitoring ? this.reportage.reporterOrigin : undefined,
       // any custom parameters can be used for this.path.config/policy/policy.js and its dependencies as well
       isReact: () => this.path.raw === 'raw-react' ? true : undefined,
-      isLit: () => this.path.raw === 'raw-lit' ? true : undefined,
+      isLit: () => ({ 'raw-lit': true, 'raw': true })[this.path.raw] ? true : undefined,
       // injection parameters
       attributes: {
         src: (plugin, targetPlugin, targetConfig) => this.getPluginUrl(plugin, targetPlugin),

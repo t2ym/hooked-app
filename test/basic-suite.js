@@ -18,14 +18,14 @@ basic.test = (base) => class CheckAppType extends base {
     this.title = document.querySelector('title').innerText;
   }
   async checkpoint() {
-    chai.assert.isOk([ 'Lit + TS', 'React + TS' ].indexOf(this.title) >= 0, `${this.title} is running`);
+    chai.assert.isOk([ 'Lit + JS', 'Lit + TS', 'React + TS' ].indexOf(this.title) >= 0, `${this.title} is running`);
   }
 }
 basic.test = (base) => class LitWaitForRendering extends base {
   get description() { return '[Lit] Button text is rendered'; }
   async operation(_this) {
     this.skipPhase(_this);
-    if (this.title !== 'Lit + TS') _this.skip();
+    if (this.title !== 'Lit + TS' && this.title !== 'Lit + JS') _this.skip();
     let buttonText;
     let retry = 0;
     while (!buttonText) {
@@ -49,7 +49,7 @@ basic.test = (base) => class LitInitialCountIs0 extends base {
   get description() { return '[Lit] Button text is "count is 0"'; }
   async operation(_this) {
     this.skipPhase(_this);
-    if (this.title !== 'Lit + TS') _this.skip();
+    if (this.title !== 'Lit + TS' && this.title !== 'Lit + JS') _this.skip();
     this.element = document.querySelector('my-app');
   }
   async checkpoint() {
@@ -61,7 +61,7 @@ basic.test = (base) => class LitIncrementCount extends base {
   get description() { return '[Lit] Click the button to increment the count'; }
   async operation(_this) {
     this.skipPhase(_this);
-    if (this.title !== 'Lit + TS') _this.skip();
+    if (this.title !== 'Lit + TS' && this.title !== 'Lit + JS') _this.skip();
     this.element = document.querySelector('my-app');
     this.count = this.element.count;
     await this.forMutation(

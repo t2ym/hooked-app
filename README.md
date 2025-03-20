@@ -11,7 +11,7 @@ Application Template for [Thin Hook Preprocessor](https://github.com/t2ym/thin-h
   - [Features](#features)
   - [Getting Started](#getting-started)
   - [Customization \& Configuration](#customization--configuration)
-    - [Switch to the Lit app](#switch-to-the-lit-app)
+    - [Switch to the Lit + TypeScript app](#switch-to-the-lit--typescript-app)
     - [Change the app hostname](#change-the-app-hostname)
     - [Change the app version](#change-the-app-version)
   - [Notes](#notes)
@@ -21,8 +21,9 @@ Application Template for [Thin Hook Preprocessor](https://github.com/t2ym/thin-h
 
 - App Template for [Thin Hook Preprocessor](https://github.com/t2ym/thin-hook)
 - Apps
-  - React app in TypeScript (default)
+  - React app in TypeScript
   - Lit app in TypeScript
+  - Lit app in JavaScript (default)
 
 ## Getting Started
 
@@ -119,8 +120,8 @@ google-chrome https://localhost:8082/ &
 
 ## Customization & Configuration
 
-### Switch to the Lit app
-- Change the value of `this.path.raw` as `raw-lit` by setting the array index from `1` to `0`
+### Switch to the Lit + TypeScript app
+- Change the value of `this.path.raw` as `raw-lit` by setting the array index from `2` to `0`
 
 ### Change the app hostname
 - Set the environment variable `SERVER_HOST` as the server hostname in FQDN
@@ -133,7 +134,7 @@ google-chrome https://localhost:8082/ &
 ## Notes
 - The example modular access policies at `config/policy/` are still experimental
   - Monolithic policies are recommended
-- The libraries at `compat-lib` are old and have to be updated
+- The UI libraries at `compat-lib` are old and have to be updated
 
 ## License
 
