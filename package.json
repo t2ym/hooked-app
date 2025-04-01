@@ -1,10 +1,10 @@
 {
   "name": "hooked-app",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "thin-hook app template",
   "main": "index.js",
   "scripts": {
-    "pack": "cd compat-lib &&\\\nnpm pack thin-hook@0.4.0-alpha.61 &&\\\nnpm pack reportage@0.0.11 &&\\\nnpm pack scenarist@1.1.10 &&\\\nnpm pack target-configurator@0.1.11 &&\\\nnpm pack target-injector@0.1.1",
+    "pack": "cd compat-lib &&\\\nnpm pack thin-hook@0.4.0-alpha.62 &&\\\nnpm pack reportage@0.0.11 &&\\\nnpm pack scenarist@1.1.10 &&\\\nnpm pack target-configurator@0.1.11 &&\\\nnpm pack target-injector@0.1.1",
     "build": "gulp",
     "build:monitor": "ENABLE_MONITORING=1 gulp",
     "start": "gulp https # npm run build must have been done",
@@ -29,7 +29,7 @@
     "scenarist": "file:compat-lib/scenarist-1.1.10.tgz",
     "target-configurator": "file:compat-lib/target-configurator-0.1.11.tgz",
     "target-injector": "file:compat-lib/target-injector-0.1.1.tgz",
-    "thin-hook": "file:compat-lib/thin-hook-0.4.0-alpha.61.tgz",
+    "thin-hook": "file:compat-lib/thin-hook-0.4.0-alpha.62.tgz",
     "typescript": "^5.8.2"
   },
   "overrides": {
